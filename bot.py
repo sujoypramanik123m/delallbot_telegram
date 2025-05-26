@@ -49,8 +49,7 @@ async def handler_start(event):
         f"𝖫𝖺𝗌𝗍 𝖭𝖺𝗆𝖾: {user.last_name or 'None'}\n"
         f"𝖴𝗌𝖾𝗋 𝖭𝖺𝗆𝖾: @{user.username or 'None'}\n"
         f"𝖴𝗌𝖾𝗋 𝖫𝗂𝗇𝗄: [Click Here](tg://user?id={user.id})\n\n"
-        f"𝖣𝖺𝗍𝖾: {datetime.now
-    ().strftime('%d %B, %Y')}\n"
+        f"𝖣𝖺𝗍𝖾: {datetime.now().strftime('%d %B, %Y')}\n"
         f"𝖳𝗂𝗆𝖾: {datetime.now().strftime('%I:%M:%S %p')}"
     )
 
