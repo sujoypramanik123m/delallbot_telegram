@@ -41,17 +41,17 @@ async def handler_start(event):
         buttons=buttons
     )
     await client.send_message(
-        LOG_CHANNEL_ID,
-        f"𝖭𝖾𝗐 𝖴𝗌𝖾𝗋 𝖲𝗍𝖺𝗋𝗍𝖾𝖽 𝖳𝗁𝖾 𝖡𝗈𝗍\n\n"
-        f"𝖴𝗌𝖾𝗋 𝖬𝖾𝗇𝗍𝗂𝗈𝗇: {user.first_name} {user.last_name or ''}\n"
-        f"𝖴𝗌𝖾𝗋 𝖨𝖣: {user.id}\n"
-        f"𝖥𝗂𝗋𝗌𝗍 𝖭𝖺𝗆𝖾: {user.first_name}\n"
-        f"𝖫𝖺𝗌𝗍 𝖭𝖺𝗆𝖾: {user.last_name or 'None'}\n"
-        f"𝖴𝗌𝖾𝗋 𝖭𝖺𝗆𝖾: @{user.username or 'None'}\n"
-        f"𝖴𝗌𝖾𝗋 𝖫𝗂𝗇𝗄: [Click Here](tg://user?id={user.id})\n\n"
-    ().strftime('%d %B, %Y')}\n"
-        f"𝖳𝗂𝗆𝖾: {datetime.now().strftime('%I:%M:%S %p')}"
-    )
+    LOG_CHANNEL_ID,
+    f"𝖭𝖾𝗐 𝖴𝗌𝖾𝗋 𝖲𝗍𝖺𝗋𝗍𝖾𝖽 𝖳𝗁𝖾 𝖡𝗈𝗍\n\n"
+    f"𝖴𝗌𝖾𝗋 𝖬𝖾𝗇𝗍𝗂𝗈𝗇: {user.first_name} {user.last_name or ''}\n"
+    f"𝖴𝗌𝖾𝗋 𝖨𝖣: {user.id}\n"
+    f"𝖥𝗂𝗋𝗌𝗍 𝖭𝖺𝗆𝖾: {user.first_name}\n"
+    f"𝖫𝖺𝗌𝗍 𝖭𝖺𝗆𝖾: {user.last_name or 'None'}\n"
+    f"𝖴𝗌𝖾𝗋 𝖭𝖺𝗆𝖾: @{user.username or 'None'}\n"
+    f"𝖴𝗌𝖾𝗋 𝖫𝗂𝗇𝗄: [Click Here](tg://user?id={user.id})\n\n"
+    f"𝖣𝖺𝗍𝖾: {datetime.now().strftime('%d %B, %Y')}\n"
+    f"𝖳𝗂𝗆𝖾: {datetime.now().strftime('%I:%M:%S %p')}"
+)
 
 @client.on(events.NewMessage(pattern='/delall'))
 async def handler_delall(event):
