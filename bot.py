@@ -98,9 +98,6 @@ async def handler_broadcast(event):
     await broadcast_message(client, chats, message_to_broadcast)
     await event.reply("Broadcast completed!")
 
-async def main():
-    print("Bot is up and running...")
-    await client.run_until_disconnected()
-
 if __name__ == '__main__':
-    asyncio.run(main())
+    print("Bot is up and running...")
+    client.run_until_disconnected()
