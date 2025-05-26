@@ -1,12 +1,11 @@
-# Configuration file for the Telegram bot
+# config.py
 
-API_ID = '22182189'
-API_HASH = '5e7c4088f8e23d0ab61e29ae11960bf5'
-BOT_TOKEN = '7994699443:AAH1CV-Pr1vN86pOO1JFqve0ZJQ8h_At-eo'
+import os
 
-# MongoDB configuration
-DB_URL = 'mongodb+srv://sujoy123m:wTWKGUaxYE7dxb1l@cluster0.zorxb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'  # Replace with your MongoDB URI
-DB_NAME = 'telegram_bot'
-
-# Log channel ID where notifications about new users will be sent
-LOG_CHANNEL = -1002634001741  # Replace with your log channel ID
+API_ID = os.getenv('API_ID')
+API_HASH = os.getenv('API_HASH')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+DB_URL = os.getenv('DB_URL')
+DB_NAME = os.getenv('DB_NAME')
+LOG_CHANNEL_ID = os.getenv('LOG_CHANNEL_ID')
+OWNER_ID = os.getenv('OWNER_ID')
