@@ -1,3 +1,4 @@
 telethon>=1.27.0
 pymongo>=4.0.0
 pyrogram>=1.4.16
+TgCrypto
