@@ -9,4 +9,13 @@ furnished to do so, subject to the following conditions:
 
 ...
 
-(full text here)
+(
+## Notes
+
+- Commands only work in groups, supergroups, and channels where the bot and the commanding user are admins.
+- Telegram API limits apply; attempting massive deletions might hit rate limits.
+- Use responsibly!
+
+## License
+
+MIT License)
