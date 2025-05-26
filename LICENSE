@@ -1,21 +1,22 @@
+## License
+
 MIT License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 ...
 
-(
-## Notes
+## Deployment Checklist
 
-- Commands only work in groups, supergroups, and channels where the bot and the commanding user are admins.
-- Telegram API limits apply; attempting massive deletions might hit rate limits.
-- Use responsibly!
+- *MongoDB Setup*: Ensure MongoDB is accessible from your Docker container. Adjust `DB_URL` in `config.py` to match your setup.
+- *API Credentials*: Replace placeholders in `config.py` with actual Telegram API credentials and log channel ID.
+- *Permissions*: Ensure the bot has necessary admin permissions in the channels/groups it is added to.
 
-## License
+## Testing
 
-MIT License)
+Before deploying, test the bot locally to ensure:
+- The `/delall` and `/delfrom` commands work correctly and are restricted to admins in both groups and channels.
+- The `/broadcast` command functions smoothly for private messages, groups, and channels, restricted to the bot owner.
+- The bot achieves high speed in message deletion.
+
+With these modifications, your bot should be ready for deployment without errors. If you encounter any issues during deployment or need further assistance, feel free to ask!
